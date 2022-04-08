@@ -1,0 +1,231 @@
+@import "vars";
+
+.skills {
+  margin: 40px 133px 0 0;
+  .skills__btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px 52px;
+    margin: 0;
+  }
+
+  .skills__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+    color: $black;
+    margin: 0;
+  }
+
+  .skills__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $accent;
+    margin: 0;
+  }
+}
+.skills__list {
+  margin: 92px 0 0 0;
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-auto-rows: auto;
+  gap: 18px;
+}
+.skills__speak {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  max-width: 435px;
+  min-height: 894px;
+  background: $light;
+  border-radius: 10px;
+  .speak__blog {
+    width: 100%;
+    padding: 35px 22px 4px;
+    .speak__img {
+      max-width: 390px;
+      max-height: 390px;
+    }
+  }
+
+  .speak__blog-2 {
+    padding: 0 43px;
+
+    .speak__btn {
+      margin: 36px 0 0;
+      padding: 17px 64px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    .speak__text {
+      margin: 0 0 20px;
+    }
+  }
+}
+.skills__writ {
+  max-width: 434px;
+  max-height: 531px;
+  background-color: $light;
+  border-radius: 10px;
+
+  .writ__blog {
+    width: 100%;
+    padding: 4px 19px 0 122px;
+
+    .writ__img {
+      max-width: 293px;
+      max-height: 293px;
+    }
+  }
+
+  .writ__blog-2 {
+    padding: 0 41px;
+    .writ__title {
+      margin: -58px 0 0;
+    }
+    .writ__btn {
+      margin: 33px 0 44px;
+    }
+  }
+}
+
+.skills__read {
+  max-width: 434px;
+  min-height: 531px;
+  background: $light;
+  border-radius: 10px;
+  .read__blog {
+    width: 100%;
+    margin: 0px 63px 0 9px;
+
+    .read__img {
+      max-width: 371px;
+      max-height: 247px;
+      margin: 0;
+    }
+  }
+
+  .read__blog-2 {
+    padding: 0 30px 0 41px;
+    .raed__title {
+      margin: 0;
+      padding: 0;
+    }
+
+    .read__text {
+      margin: -10px 0 0;
+      padding: 0;
+    }
+    .read__btn {
+      margin: 35px 0 44px;
+    }
+  }
+}
+
+.skills__listen {
+  margin: 20px 0 0 0;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  max-width: 885px;
+  max-height: 343px;
+  background: $light;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  .listen__blog {
+    padding: 44px 25px 44px 0;
+    width: 100%;
+    .listen__img {
+      max-width: 382px;
+      max-height: 255px;
+    }
+  }
+
+  .listen__blog-2 {
+    padding: 0 48px;
+    .listen__title {
+      margin: 30px 0 0;
+    }
+
+    .listen__text {
+      margin: 0;
+    }
+    .listen__btn {
+      margin: 25px 0 68px;
+      padding: 15px 52px;
+    }
+  }
+}
+
+/*@media screen and (max-width: 992px) {
+  .skills {
+    padding: 0;
+    margin: 0;
+    padding: 0 26px 0 32px;
+
+    .skills__text {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    .skills__title {
+      font-size: 22px;
+      line-height: 80px;
+    }
+
+    .skills__btn {
+      font-size: 18px;
+      line-height: 27px;
+      padding: 16px 41px;
+    }
+    .skills__speak {
+      width: 303px;
+      height: 696px;
+
+      .speak__img {
+        margin: 0 21px 0 21px;
+        width: 260px;
+        height: 260px;
+      }
+
+      .speak__title {
+        margin: 3px 0 0 29px;
+      }
+      .speak__text {
+        margin: 3px 0 0 29px;
+      }
+
+      .speak__btn {
+        margin: 36px 0 5px 29px;
+        padding: 16px 41px;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+
+    .skills__writ {
+      padding: 0;
+      margin: 0;
+      width: 302px;
+      height: 441px;
+    }
+
+    .writ__img {
+      margin: 0;
+      padding: 0 30px 0 0;
+      width: 205px;
+      height: 205px;
+    }
+  }
+}*/
