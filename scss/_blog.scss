@@ -1,0 +1,79 @@
+@import "vars";
+
+.blog {
+  //margin: 70px 0 86px;
+
+  .pricing {
+    padding: 30px 0 0 30px;
+  }
+
+  .blog__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog__pad {
+    padding: 0 65px;
+  }
+
+  .blog__price-2 {
+    margin: 59px 0 0;
+  }
+
+  .blog__item {
+    max-width: 400px;
+    .blog__item-img {
+      padding: 0 0 0 26px;
+      width: 100%;
+    }
+
+    .blog__item-2 {
+      margin: 0 0 20px;
+    }
+
+    .blog__title {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 48px;
+      color: $dark;
+      margin: 60px 0 0;
+    }
+
+    .blog__title-2 {
+      margin: 15px 0 0;
+    }
+
+    .blog__leed {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $accent;
+    }
+
+    .blog__price {
+      display: inline-block;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      padding: 0 27px 0 12px;
+      background-color: $price;
+      color: $accent;
+      border-radius: 5px;
+    }
+
+    .blog__price > strong {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 45px;
+      color: $dark;
+    }
+  }
+}

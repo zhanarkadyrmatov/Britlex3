@@ -1,0 +1,61 @@
+@import "vars";
+
+.contact {
+  .contact__title-2 {
+    display: none;
+  }
+  .contact__blog {
+    margin: 257px 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__img {
+    max-width: 477px;
+    max-height: 429px;
+  }
+  .contact__list {
+    margin: -35px 0 0 111px;
+  }
+
+  .contact__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: $black;
+  }
+
+  .contact__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $accent;
+    margin: 37px 0 52px;
+  }
+
+  .contact__in {
+    width: 450px;
+    height: 80px;
+    outline: none;
+    border: none;
+    border: 1px solid $accent;
+    border-radius: 10px;
+    margin: 0 12px 0 0;
+  }
+
+  .contact__btn {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: $dark;
+    color: #ffffff;
+    padding: 25px 82px;
+    border-radius: 10px;
+  }
+}

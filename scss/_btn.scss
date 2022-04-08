@@ -1,0 +1,16 @@
+@import "vars";
+
+.btn {
+  display: inline-block;
+  font-family: $main-font;
+  font-style: normal;
+  color: $light;
+  background-color: $dark;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: $accent;
+  color: $dark;
+}

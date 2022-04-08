@@ -1,0 +1,14 @@
+@import "vars";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+}
