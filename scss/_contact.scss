@@ -60,6 +60,43 @@
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .contact {
+    .contact__blog {
+      margin: 130px 0 0;
+    }
+
+    .contact__img {
+      max-width: 412px;
+      max-height: 381px;
+    }
+    .contact__list {
+      margin: -35px 0 0 70px;
+    }
+
+    .contact__title {
+      font-size: 38px;
+      line-height: 80px;
+    }
+
+    .contact__text {
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    .contact__in {
+      width: 350px;
+      height: 60px;
+    }
+
+    .contact__btn {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 18px 56px;
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .contact {
     .contact__blog {

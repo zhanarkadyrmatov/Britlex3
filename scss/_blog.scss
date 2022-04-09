@@ -87,6 +87,53 @@
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .blog {
+    .blog__price-2 {
+      margin: 59px 0 0;
+    }
+
+    .blog__item-2 {
+      margin: 0 0 20px;
+    }
+
+    .blog__pad {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+
+    .blog__item-text {
+      .blog__title {
+        font-size: 24px;
+        line-height: 48px;
+      }
+
+      .blog__title1 {
+        margin: -10px 0 0;
+      }
+
+      .blog__title-2 {
+        margin: 5px 0 0;
+      }
+
+      .blog__leed {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .blog__price {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .blog__price > strong {
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .blog {
     .blog__price-2 {
