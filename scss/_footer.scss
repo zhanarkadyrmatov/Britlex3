@@ -23,6 +23,23 @@
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .footer {
+    margin: 82px 0 0;
+    .footer__logo {
+      margin: 23px 0 24px;
+      max-width: 100px;
+      max-height: 50px;
+    }
+
+    .footer__text {
+      margin: 37px 0 30px;
+      font-size: 19px;
+      line-height: 24px;
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .footer {
     margin: 82px 0 0;

@@ -46,6 +46,34 @@
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .header {
+    width: 100%;
+    padding: 50px 0 0;
+    .header__img {
+      max-width: 100px;
+      max-height: 54px;
+      margin: 0;
+    }
+    .header__btn {
+      margin: 0;
+      padding: 16px 55px;
+      font-size: 20px;
+      line-height: 27px;
+    }
+    .menu {
+      .menu__link {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .memu__item + .menu__item {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .header {
     width: 100%;
@@ -102,7 +130,7 @@
 
   .menu {
     position: absolute;
-    display: none;
+    display: block;
     flex-direction: column;
     width: 50%;
     min-height: 100vh;

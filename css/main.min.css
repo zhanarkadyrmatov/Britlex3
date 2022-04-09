@@ -4,6 +4,13 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1140px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .container {
     max-width: 992px;
@@ -125,6 +132,31 @@
   display: none;
 }
 
+@media screen and (max-width: 1140px) {
+  .header {
+    width: 100%;
+    padding: 50px 0 0;
+  }
+  .header .header__img {
+    max-width: 100px;
+    max-height: 54px;
+    margin: 0;
+  }
+  .header .header__btn {
+    margin: 0;
+    padding: 16px 55px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .header .menu .menu__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .header .menu .memu__item + .menu__item {
+    margin-left: 20px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .header {
     width: 100%;
@@ -175,7 +207,7 @@
   }
   .menu {
     position: absolute;
-    display: none;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -473,7 +505,7 @@
   max-width: 85.24px;
   min-height: 85.24px;
   content: "";
-  background-image: url("../images/light-bulb-svgrepo-com3.svg");
+  background-image: url("../images/light-bulb-svgrepo-com1.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -500,6 +532,39 @@
   line-height: 54px;
 }
 
+@media screen and (max-width: 1140px) {
+  .hero {
+    margin: 86px 0 0;
+  }
+  .hero .hero__1 {
+    margin: 0;
+  }
+  .hero .hero__1 .hero__img {
+    width: 550px;
+    min-height: 550px;
+  }
+  .hero .hero__2 .hero__title {
+    font-size: 58px;
+    line-height: 64px;
+  }
+  .hero .hero__2 .hero__title::before {
+    top: 105px;
+    left: 380px;
+    width: 70.24px;
+    height: 70.24px;
+  }
+  .hero .hero__2 .hero__text {
+    padding: 0;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .hero .hero__2 .hero__link {
+    padding: 25px 85px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .hero {
     margin: 86px 0 0;
@@ -520,6 +585,7 @@
     left: 300px;
     width: 58.24px;
     height: 58.24px;
+    background-image: url("../images/light-bulb-svgrepo-com2.svg");
   }
   .hero .hero__2 .hero__text {
     padding: 0;
@@ -550,6 +616,7 @@
     left: 230px;
     width: 50.24px;
     height: 50.24px;
+    background-image: url("../images/light-bulb-svgrepo-com3.svg");
   }
   .hero .hero__2 .hero__text {
     margin: 0;
@@ -920,6 +987,126 @@
 .skills__listen .listen__blog-2 .listen__btn {
   margin: 25px 0 68px;
   padding: 15px 52px;
+}
+
+@media screen and (max-width: 1140px) {
+  .skills .skills__btn {
+    padding: 18px 50px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .skills .skills__title {
+    font-size: 24px;
+    line-height: 80px;
+  }
+  .skills .skills__text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .skills .skills__list {
+    margin: 55px 0 0 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr;
+    grid-auto-rows: auto;
+    gap: 18px;
+  }
+  .skills .skills__speak {
+    max-width: 360px;
+    min-height: 720px;
+  }
+  .skills .skills__speak .speak__blog {
+    width: 100%;
+    padding: 0px 22px 0px;
+  }
+  .skills .skills__speak .speak__blog .speak__img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .skills .skills__speak .speak__blog-2 {
+    padding: 0 28px;
+  }
+  .skills .skills__speak .speak__blog-2 .speak__btn {
+    margin: 36px 0 0;
+    padding: 16px 41px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .skills .skills__speak .speak__blog-2 .speak__text {
+    margin: 0 0 20px;
+  }
+  .skills .skills__writ {
+    max-width: 360px;
+    min-height: 441px;
+  }
+  .skills .skills__writ .writ__blog {
+    padding: 5px 10px 0 87px;
+  }
+  .skills .skills__writ .writ__blog .writ__img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .skills .skills__writ .writ__blog-2 {
+    padding: 0 30px;
+  }
+  .skills .skills__writ .writ__blog-2 .writ__title {
+    margin: -20px 0 0;
+  }
+  .skills .skills__writ .writ__blog-2 .writ__btn {
+    margin: 33px 0 44px;
+  }
+  .skills .skills__read {
+    max-width: 360px;
+    min-height: 441px;
+  }
+  .skills .skills__read .read__blog {
+    margin: 16px 58px 0 3px;
+  }
+  .skills .skills__read .read__blog .read__img {
+    max-width: 300px;
+    max-height: 200px;
+    margin: 0;
+  }
+  .skills .skills__read .read__blog-2 {
+    padding: 0 15px 0 30px;
+  }
+  .skills .skills__read .read__blog-2 .raed__title {
+    margin: 0;
+    padding: 0;
+  }
+  .skills .skills__read .read__blog-2 .read__text {
+    margin: -10px 0 0;
+    padding: 0;
+  }
+  .skills .skills__read .read__blog-2 .read__btn {
+    margin: 55px 0 34px;
+  }
+  .skills .skills__listen {
+    margin: 0;
+    max-width: 777px;
+    min-height: 241px;
+  }
+  .skills .skills__listen .listen__blog {
+    padding: 38px 19px 38px 0;
+  }
+  .skills .skills__listen .listen__blog .listen__img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+  .skills .skills__listen .listen__blog-2 {
+    padding: 0 35px;
+  }
+  .skills .skills__listen .listen__blog-2 .listen__title {
+    margin: 30px 0 0;
+  }
+  .skills .skills__listen .listen__blog-2 .listen__text {
+    margin: 0;
+  }
+  .skills .skills__listen .listen__blog-2 .listen__btn {
+    margin: 25px 0 68px;
+    padding: 15px 52px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1550,6 +1737,36 @@
   padding: 0;
 }
 
+@media screen and (max-width: 1140px) {
+  .about .about__blog {
+    margin: 230px 0 0;
+  }
+  .about .about__blog .about__img {
+    max-width: 436px;
+    max-height: 436px;
+  }
+  .about .about__blog .about__title {
+    font-size: 40px;
+    line-height: 80px;
+    margin: 0 0 23px;
+  }
+  .about .about__blog .about__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .about .about__blog .about__pad {
+    padding: 0 40px 0 50px;
+  }
+  .about .about__blog .about__li > strong {
+    font-size: 36px;
+    line-height: 80px;
+  }
+  .about .about__blog .about__p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .about .about__blog {
     margin: 230px 0 0;
@@ -1836,6 +2053,41 @@
   font-size: 30px;
   line-height: 45px;
   color: #263238;
+}
+
+@media screen and (max-width: 1140px) {
+  .blog .blog__price-2 {
+    margin: 59px 0 0;
+  }
+  .blog .blog__item-2 {
+    margin: 0 0 20px;
+  }
+  .blog .blog__pad {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .blog .blog__item-text .blog__title {
+    font-size: 24px;
+    line-height: 48px;
+  }
+  .blog .blog__item-text .blog__title1 {
+    margin: -10px 0 0;
+  }
+  .blog .blog__item-text .blog__title-2 {
+    margin: 5px 0 0;
+  }
+  .blog .blog__item-text .blog__leed {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .blog .blog__item-text .blog__price {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .blog .blog__item-text .blog__price > strong {
+    font-size: 26px;
+    line-height: 36px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -2150,6 +2402,36 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1140px) {
+  .contact .contact__blog {
+    margin: 130px 0 0;
+  }
+  .contact .contact__img {
+    max-width: 412px;
+    max-height: 381px;
+  }
+  .contact .contact__list {
+    margin: -35px 0 0 70px;
+  }
+  .contact .contact__title {
+    font-size: 38px;
+    line-height: 80px;
+  }
+  .contact .contact__text {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .contact .contact__in {
+    width: 350px;
+    height: 60px;
+  }
+  .contact .contact__btn {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 18px 56px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .contact .contact__blog {
     margin: 130px 0 0;
@@ -2357,6 +2639,22 @@
   font-size: 24px;
   line-height: 36px;
   color: #8f95a5;
+}
+
+@media screen and (max-width: 1140px) {
+  .footer {
+    margin: 82px 0 0;
+  }
+  .footer .footer__logo {
+    margin: 23px 0 24px;
+    max-width: 100px;
+    max-height: 50px;
+  }
+  .footer .footer__text {
+    margin: 37px 0 30px;
+    font-size: 19px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 992px) {

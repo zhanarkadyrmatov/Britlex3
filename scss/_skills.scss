@@ -171,6 +171,144 @@
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .skills {
+    .skills__btn {
+      padding: 18px 50px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    .skills__title {
+      font-size: 24px;
+      line-height: 80px;
+    }
+
+    .skills__text {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    .skills__list {
+      margin: 55px 0 0 0;
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      grid-auto-rows: auto;
+      gap: 18px;
+    }
+
+    .skills__speak {
+      max-width: 360px;
+      min-height: 720px;
+      .speak__blog {
+        width: 100%;
+        padding: 0px 22px 0px;
+        .speak__img {
+          max-width: 300px;
+          max-height: 300px;
+        }
+      }
+
+      .speak__blog-2 {
+        padding: 0 28px;
+
+        .speak__btn {
+          margin: 36px 0 0;
+          padding: 16px 41px;
+          font-size: 18px;
+          line-height: 27px;
+        }
+        .speak__text {
+          margin: 0 0 20px;
+        }
+      }
+    }
+
+    .skills__writ {
+      max-width: 360px;
+      min-height: 441px;
+
+      .writ__blog {
+        padding: 5px 10px 0 87px;
+
+        .writ__img {
+          max-width: 250px;
+          max-height: 250px;
+        }
+      }
+
+      .writ__blog-2 {
+        padding: 0 30px;
+        .writ__title {
+          margin: -20px 0 0;
+        }
+        .writ__btn {
+          margin: 33px 0 44px;
+        }
+      }
+    }
+
+    .skills__read {
+      max-width: 360px;
+      min-height: 441px;
+      .read__blog {
+        margin: 16px 58px 0 3px;
+
+        .read__img {
+          max-width: 300px;
+          max-height: 200px;
+          margin: 0;
+        }
+      }
+
+      .read__blog-2 {
+        padding: 0 15px 0 30px;
+        .raed__title {
+          margin: 0;
+          padding: 0;
+        }
+
+        .read__text {
+          margin: -10px 0 0;
+          padding: 0;
+        }
+        .read__btn {
+          margin: 55px 0 34px;
+        }
+      }
+    }
+
+    .skills__listen {
+      margin: 0;
+      max-width: 777px;
+      min-height: 241px;
+
+      .listen__blog {
+        padding: 38px 19px 38px 0;
+        .listen__img {
+          max-width: 300px;
+          max-height: 200px;
+        }
+      }
+
+      .listen__blog-2 {
+        padding: 0 35px;
+        .listen__title {
+          margin: 30px 0 0;
+        }
+
+        .listen__text {
+          margin: 0;
+        }
+        .listen__btn {
+          margin: 25px 0 68px;
+          padding: 15px 52px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .skills {
     .skills__btn {
