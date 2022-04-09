@@ -5,7 +5,7 @@
     display: none;
   }
   .about__blog {
-    margin: 255px 0 0;
+    margin: 230px 0 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -45,8 +45,7 @@
     }
 
     .about__list {
-      max-width: 652px;
-      min-height: 330px;
+      width: 50%;
     }
 
     .about__li {
@@ -78,6 +77,211 @@
       color: $accent;
       margin: 0;
       padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+    .about__blog {
+      margin: 230px 0 0;
+
+      .about__img {
+        max-width: 336px;
+        max-height: 336px;
+      }
+
+      .about__title {
+        font-size: 36px;
+        line-height: 80px;
+        margin: 0 0 23px;
+      }
+
+      .about__text {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .about__pad {
+        padding: 0 20px 0 30px;
+      }
+
+      .about__li > strong {
+        font-size: 30px;
+        line-height: 80px;
+      }
+
+      .about__p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    .about__blog {
+      margin: 52px 0 0;
+
+      .about__img {
+        max-width: 295px;
+        max-height: 295px;
+      }
+
+      .about__title {
+        font-size: 30px;
+        line-height: 80px;
+        margin: 0;
+      }
+
+      .about__text {
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      .about__pad {
+        padding: 0 20px 0 30px;
+      }
+
+      .about__li > strong {
+        font-size: 22px;
+        line-height: 80px;
+      }
+
+      .about__p {
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about {
+    .section-title {
+      margin: 0;
+      padding: 50px 20px 24px;
+      font-size: 24px;
+      line-height: 80px;
+    }
+
+    .about__title-2 {
+      display: block;
+    }
+    .about__blog {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .about__img {
+        padding: 0 80px 0;
+        width: 352px;
+        height: 352px;
+      }
+
+      .about__list {
+        width: 100%;
+        text-align: center;
+        .about__text {
+          margin: 0 10px;
+          font-size: 13px;
+          line-height: 20px;
+        }
+
+        .about__title {
+          display: none;
+        }
+      }
+
+      .about__menu {
+        .about__li {
+          padding: 0;
+          margin: 0;
+        }
+
+        .about__li > strong {
+          font-size: 24px;
+          line-height: 80px;
+          margin: 0;
+        }
+
+        .about__pad {
+          padding: 0 50px;
+        }
+
+        .about__p {
+          margin: -20px 0;
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about {
+    .about__title-2 {
+      display: flex;
+      font-size: 24px;
+      line-height: 80px;
+      padding: 0 0 0 80px;
+    }
+    .about__blog {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .about__img {
+        padding: 0;
+        width: 283px;
+        height: 283px;
+      }
+
+      .about__list {
+        width: 100%;
+        text-align: center;
+        .about__text {
+          margin: 0 10px;
+          font-size: 13px;
+          line-height: 20px;
+        }
+
+        .about__title {
+          display: none;
+        }
+      }
+
+      .about__menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+        .about__li {
+          margin: 0 0 50px;
+        }
+
+        .about__li > strong {
+          font-size: 24px;
+          line-height: 80px;
+          margin: 0;
+        }
+
+        .about__pad {
+          padding: 0 50px;
+        }
+
+        .about__p {
+          margin: -20px 0;
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
     }
   }
 }

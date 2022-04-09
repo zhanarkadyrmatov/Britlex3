@@ -1,19 +1,21 @@
 @import "vars";
 
 .blog {
-  //margin: 70px 0 86px;
+  width: 100%;
+  margin: 170px 100px 100px 0;
 
   .pricing {
-    padding: 30px 0 0 30px;
+    padding: 0px 0 0 30px;
   }
 
   .blog__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .blog__pad {
-    padding: 0 65px;
+    margin-left: 100px;
+    margin-right: 50px;
   }
 
   .blog__price-2 {
@@ -21,10 +23,13 @@
   }
 
   .blog__item {
-    max-width: 400px;
+    width: 33%;
     .blog__item-img {
       padding: 0 0 0 26px;
-      width: 100%;
+
+      .blog__img {
+        width: 100%;
+      }
     }
 
     .blog__item-2 {
@@ -41,8 +46,12 @@
       margin: 60px 0 0;
     }
 
+    .blog__title1 {
+      margin: -10px 0 0;
+    }
+
     .blog__title-2 {
-      margin: 15px 0 0;
+      margin: 0;
     }
 
     .blog__leed {
@@ -74,6 +83,278 @@
       font-size: 30px;
       line-height: 45px;
       color: $dark;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .blog {
+    .blog__price-2 {
+      margin: 59px 0 0;
+    }
+
+    .blog__item-2 {
+      margin: 0 0 20px;
+    }
+
+    .blog__pad {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+
+    .blog__item-text {
+      .blog__title {
+        font-size: 20px;
+        line-height: 48px;
+      }
+
+      .blog__title1 {
+        margin: 10px 0 0;
+      }
+
+      .blog__title-2 {
+        margin: 15px 0 0;
+      }
+
+      .blog__leed {
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      .blog__price {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .blog__price > strong {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .blog {
+    margin: 88px 0 0;
+    width: 100%;
+    .blog__price-2 {
+      margin: 59px 0 0;
+    }
+
+    .blog__item-2 {
+      margin: 0 0 20px;
+    }
+
+    .blog__pad {
+      margin-left: 40px;
+      margin-right: 20px;
+    }
+
+    .blog__item-text {
+      .blog__title {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .blog__title1 {
+        margin: 20px 0 0;
+      }
+
+      .blog__title-2 {
+        margin: 15px 0 0;
+      }
+
+      .blog__leed {
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      .blog__price {
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      .blog__price > strong {
+        font-size: 18px;
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .blog {
+    width: 100%;
+
+    .pricing {
+      margin: 0;
+      padding: 0;
+    }
+
+    .blog__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .blog__item {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 50px;
+        .blog__item-img {
+          .blog__img {
+            margin: 0;
+            max-width: 291px;
+          }
+        }
+
+        .blog__item-text {
+          .blog__title {
+            font-size: 24px;
+            line-height: 28px;
+            margin: 7px 0 30px;
+          }
+          .blog__leed {
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+          }
+          .blog__price {
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            padding: 5px 15px 5px 12px;
+            margin: 31px 0 0;
+          }
+
+          .blog__price > strong {
+            font-size: 22px;
+            line-height: 33px;
+          }
+        }
+      }
+    }
+
+    .blog__img-1 {
+      margin: 72px 40px 0 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .blog {
+    margin: 131px 0 0;
+    width: 100%;
+
+    .blog__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .blog__item {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 50px;
+        .blog__item-img {
+          .blog__img {
+            margin: 0;
+            max-width: 248px;
+            max-height: 248px;
+          }
+        }
+
+        .blog__item-text {
+          text-align: center;
+          .blog__title {
+            font-size: 18px;
+            line-height: 28px;
+            margin: 7px 0 30px;
+          }
+          .blog__leed {
+            font-size: 13px;
+            line-height: 20px;
+          }
+          .blog__price {
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            padding: 5px 15px 5px 12px;
+            margin: 31px 0 0;
+          }
+
+          .blog__price > strong {
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+
+    .blog__img-1 {
+      margin: 72px 40px 0 40px;
+    }
+  }
+  .blog {
+    .section-title {
+      margin: 0;
+      padding: 84px 30px 49px;
+      font-size: 24px;
+      line-height: 80px;
+    }
+
+    .pricing {
+      margin: 0;
+      padding: 0;
+    }
+
+    .blog__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .blog__item {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 50px;
+        .blog__item-img {
+          .blog__img {
+            margin: 0;
+            max-width: 248px;
+            max-height: 248px;
+          }
+        }
+
+        .blog__item-text {
+          text-align: center;
+          .blog__title {
+            font-size: 18px;
+            line-height: 28px;
+            margin: 7px 0 30px;
+          }
+          .blog__leed {
+            font-size: 13px;
+            line-height: 20px;
+          }
+          .blog__price {
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            padding: 5px 15px 5px 12px;
+            margin: 31px 0 0;
+          }
+
+          .blog__price > strong {
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+
+    .blog__img-1 {
+      margin: 72px 40px 0 40px;
     }
   }
 }
