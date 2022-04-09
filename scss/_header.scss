@@ -130,7 +130,7 @@
 
   .menu {
     position: absolute;
-    display: none;
+    display: block;
     flex-direction: column;
     width: 50%;
     min-height: 100vh;
@@ -161,10 +161,14 @@
         max-width: 39px;
         min-height: 39px;
       }
+
+      .menu__x:hover {
+        color: lighten($dark, 50%);
+      }
     }
 
     .menu__item {
-      padding: 30px;
+      padding: 20px 30px;
       margin: 0;
       justify-content: start;
     }
@@ -188,6 +192,11 @@
       border: 2px solid $dark;
       box-sizing: border-box;
       color: $black;
+    }
+
+    .menu__btn:hover {
+      background-color: $dark;
+      color: $light;
     }
   }
 }
@@ -220,27 +229,12 @@
   }
 
   .menu {
-    position: absolute;
-    display: none;
-    flex-direction: column;
+    display: block;
     width: 100%;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    background-color: $light;
-    z-index: 1;
     .menu-1 {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      list-style: none;
       gap: 250px;
-      width: 100%;
-      padding: 20px 0 20px;
-      border-bottom: 1px solid $accent;
-      margin: 0 0 50px 0;
+      padding: 10px 0 10px;
+      margin: 0 0 40px 0;
 
       .menu__brit {
         max-width: 89px;
@@ -254,30 +248,8 @@
     }
 
     .menu__item {
-      padding: 30px;
+      padding: 20px 40px;
       margin: 0;
-      justify-content: start;
-    }
-
-    .menu__link {
-      left: 0;
-      padding: 0;
-    }
-
-    .menu__btn {
-      margin: 60px 20px;
-      display: inline-block;
-      padding: 17px 100px;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
-      border-radius: 5px;
-      text-decoration: none;
-      border: 2px solid $dark;
-      box-sizing: border-box;
-      color: $black;
     }
   }
 }
@@ -303,33 +275,15 @@
 
     .header__toggle {
       display: block;
-      background-color: $purewhite;
-      border: none;
-      color: $black;
     }
   }
 
   .menu {
-    position: absolute;
-    display: none;
-    flex-direction: column;
+    display: block;
     width: 100%;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    background-color: $light;
-    z-index: 1;
     .menu-1 {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      list-style: none;
       gap: 180px;
-      width: 100%;
       padding: 20px 0 20px;
-      border-bottom: 1px solid $accent;
       margin: 0 0 50px 0;
 
       .menu__brit {
@@ -346,7 +300,6 @@
     .menu__item {
       padding: 18px;
       margin: 0;
-      justify-content: start;
     }
 
     .menu__link {

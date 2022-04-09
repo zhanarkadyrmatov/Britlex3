@@ -207,7 +207,7 @@
   }
   .menu {
     position: absolute;
-    display: none;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -245,8 +245,11 @@
     max-width: 39px;
     min-height: 39px;
   }
+  .menu .menu-1 .menu__x:hover {
+    color: #9fb4be;
+  }
   .menu .menu__item {
-    padding: 30px;
+    padding: 20px 30px;
     margin: 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -271,6 +274,10 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     color: #000;
+  }
+  .menu .menu__btn:hover {
+    background-color: #263238;
+    color: #e5e5e5;
   }
 }
 
@@ -298,36 +305,13 @@
     color: #000;
   }
   .menu {
-    position: absolute;
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
     width: 100%;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    background-color: #e5e5e5;
-    z-index: 1;
   }
   .menu .menu-1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    list-style: none;
     gap: 250px;
-    width: 100%;
-    padding: 20px 0 20px;
-    border-bottom: 1px solid #8f95a5;
-    margin: 0 0 50px 0;
+    padding: 10px 0 10px;
+    margin: 0 0 40px 0;
   }
   .menu .menu-1 .menu__brit {
     max-width: 89px;
@@ -338,31 +322,8 @@
     min-height: 39px;
   }
   .menu .menu__item {
-    padding: 30px;
+    padding: 20px 40px;
     margin: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .menu .menu__link {
-    left: 0;
-    padding: 0;
-  }
-  .menu .menu__btn {
-    margin: 60px 20px;
-    display: inline-block;
-    padding: 17px 100px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    border: 2px solid #263238;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    color: #000;
   }
 }
 
@@ -385,40 +346,14 @@
   }
   .header .header__toggle {
     display: block;
-    background-color: #fff;
-    border: none;
-    color: #000;
   }
   .menu {
-    position: absolute;
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
     width: 100%;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    background-color: #e5e5e5;
-    z-index: 1;
   }
   .menu .menu-1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    list-style: none;
     gap: 180px;
-    width: 100%;
     padding: 20px 0 20px;
-    border-bottom: 1px solid #8f95a5;
     margin: 0 0 50px 0;
   }
   .menu .menu-1 .menu__brit {
@@ -432,9 +367,6 @@
   .menu .menu__item {
     padding: 18px;
     margin: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
   }
   .menu .menu__link {
     left: 0;
